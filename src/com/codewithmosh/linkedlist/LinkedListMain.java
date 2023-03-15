@@ -2,7 +2,7 @@ package com.codewithmosh.linkedlist;
 
 public class LinkedListMain {
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
+        com.codewithmosh.linkedlist.LinkedList linkedList = new com.codewithmosh.linkedlist.LinkedList();
         linkedList.addFirst(10);
         linkedList.addFirst(5);
         linkedList.addLast(30);

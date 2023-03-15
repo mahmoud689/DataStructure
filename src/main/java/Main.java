@@ -1,3 +1,5 @@
+package main.java;
+
 import com.stack.arrayImplementation.Stack;
 
 public class Main {
