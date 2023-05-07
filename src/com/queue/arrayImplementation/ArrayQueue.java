@@ -3,6 +3,8 @@ package com.queue.arrayImplementation;
 import java.util.Arrays;
 import java.util.Stack;
 
+import static com.queue.arrayImplementation.QueueReverser.reverseWithLimit;
+
 public class ArrayQueue {
     private int front;
     private int rear;
@@ -54,12 +56,12 @@ public class ArrayQueue {
     public static void main(String[] args) {
         ArrayQueue queue = new ArrayQueue(5);
         queue.enqueue(10);
-        queue.enqueue(5);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
         queue.enqueue(50);
-        queue.enqueue(10);
-        queue.enqueue(1);
+        reverseWithLimit(queue, 3);
         System.out.println(queue);
-        System.out.println(queue.isEmpty());
     }
 
     @Override
